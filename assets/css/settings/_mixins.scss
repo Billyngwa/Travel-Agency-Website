@@ -1,0 +1,33 @@
+@mixin container($width,$margin_left){
+    width:$width;
+    margin-left: $margin_left;
+}
+@mixin displayElementGrid ($template_columns){
+    display: grid;
+    grid-template-columns:$template_columns;
+}
+@mixin displayElementFlex ($align){
+    display: flex;
+    justify-content:space-between;
+    align-items: $align;
+}
+@mixin buttonDesign ($border_radius,$border_color) {
+    border-radius: $border_radius;
+    border-color:$border_color;
+    border:none;
+    border-width: 1px;
+    border-style: solid;
+}
+@mixin textStyle ( $font_size, $font_weight){
+    font-family: $font_family;
+    font-weight: $font_weight;
+    font-size: $font_size;
+}
+@mixin icon ( $font_size, $font_weight, $color) {
+    font-family: $font_family;
+    font-weight: $font_weight;
+    color: $color;
+    position: absolute;
+    z-index: 4;
+    font-family: "Font Awesome 6 Free";
+}

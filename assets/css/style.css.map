@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;AACD,AAAA,MAAM,CAAA;EACF,MAAM,EAAE,OAAO;CAClB;;AACD,AAAA,EAAE,CAAA;EACE,eAAe,EAAE,IAAI;CACxB;;AACD,AAAA,CAAC,CAAA;EACG,eAAe,EAAE,IAAI;CACxB;;AFLD,MAAM,EAAE,SAAS,EAAE,MAAM;EORzB,AAAA,MAAM,CAAA;IACF,gBAAgB,ENAH,OAAO;IMCpB,QAAQ,EAAE,KAAK;IACf,KAAK,EAAE,IAAI;GAsBd;EAzBD,AAII,MAJE,CAIF,WAAW,CAAA;IJKX,OAAO,EAAE,IAAI;IACb,eAAe,EAAC,aAAa;IAC7B,WAAW,EINqB,MAAM;IJJtC,KAAK,EIKkB,GAAG;IJJ1B,WAAW,EIIiB,EAAE;GAkB7B;EAxBL,AAOQ,MAPF,CAIF,WAAW,CAGP,KAAK,CAAA;IACD,KAAK,ENNT,KAAK;IEmBT,WAAW,EFrBF,OAAO,EAAE,UAAU;IEsB5B,WAAW,EIbqB,KAAK;IJcrC,SAAS,EIdkB,IAAI;GAC1B;EAVT,AAYY,MAZN,CAIF,WAAW,CAOP,GAAG,CACC,EAAE,CAAA;IACE,MAAM,EAAE,gBAAgB;IJJpC,OAAO,EAAE,IAAI;IACb,eAAe,EAAC,aAAa;IAC7B,WAAW,EIG6B,MAAM;GAQrC;EAtBb,AAegB,MAfV,CAIF,WAAW,CAOP,GAAG,CACC,EAAE,CAGE,EAAE,CAAA;IACE,MAAM,EAAE,gBAAgB;GAK3B;EArBjB,AAiBoB,MAjBd,CAIF,WAAW,CAOP,GAAG,CACC,EAAE,CAGE,EAAE,CAEE,CAAC,CAAA;IACG,KAAK,ENhBrB,KAAK;IEmBT,WAAW,EFrBF,OAAO,EAAE,UAAU;IEsB5B,WAAW,EIHiC,KAAK;IJIjD,SAAS,EIJ8B,IAAI;GAC1B",
+    "sources": [
+        "style.scss",
+        "settings/_variables.scss",
+        "settings/_reset.scss",
+        "settings/_mixins.scss",
+        "largeScreens/_header.scss",
+        "largeScreens/_body.scss",
+        "largeScreens/_footer.scss",
+        "smallScreens/_header.scss",
+        "smallScreens/_body.scss",
+        "smallScreens/_footer.scss",
+        "tablet/_header.scss",
+        "tablet/_body.scss",
+        "tablet/_footer.scss",
+        "mobile/_header.scss",
+        "mobile/_body.scss",
+        "mobile/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

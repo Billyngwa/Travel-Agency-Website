@@ -1,0 +1,23 @@
+@import './settings/variables';
+@import './settings/reset';
+@import './settings/mixins';
+@media (max-width:1600px){
+    @import './largeScreens/header';
+    @import './largeScreens/body';
+    @import './largeScreens/footer';
+}
+@media (max-width:1200px){
+    @import './smallScreens/header';
+    @import './smallScreens/body';
+    @import './smallScreens/footer';
+}
+@media (max-width:900px){
+    @import './tablet/header';
+    @import './tablet/body';
+    @import './tablet/footer';
+}
+@media (max-width:600px){
+    @import './mobile/header';
+    @import './mobile/body';
+    @import './mobile/footer';
+}
