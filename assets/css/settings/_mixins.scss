@@ -14,9 +14,9 @@
 @mixin buttonDesign ($border_radius,$border_color) {
     border-radius: $border_radius;
     border-color:$border_color;
-    border:none;
     border-width: 1px;
     border-style: solid;
+    outline: none;
 }
 @mixin textStyle ( $font_size, $font_weight){
     font-family: $font_family;
@@ -24,10 +24,9 @@
     font-size: $font_size;
 }
 @mixin icon ( $font_size, $font_weight, $color) {
-    font-family: $font_family;
     font-weight: $font_weight;
     color: $color;
-    position: absolute;
+    position:absolute;
     z-index: 4;
-    font-family: "Font Awesome 6 Free";
+    font-family:"Font Awesome 5 Free";
 }

@@ -12,22 +12,24 @@
 </head>
 <body>
     <header>
-        <div class="navigation">
-            <div class="logo">
-                <h1>T.TRIPD</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="list_item"><a href="#">Home</a></li>
-                    <li class="list_item"><a href="#">About</a></li>
-                    <li class="list_item"><a href="#">Destinations</a></li>
-                    <li class="list_item"><a href="#">Tours</a></li>
-                    <li class="list_item"><a href="#">Blog</a></li>
-                </ul>
-            </nav>
-            <div class="user_section">
-                <button type="button" class="sign_up_btn">Sign up</button>
-                <button type="button" class="sign_in_btn">log in</button>
+        <div class="navigation_holder">
+            <div class="navigation">
+                <div class="logo">
+                    <h1>T.TRIPD</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="list_item"><a href="#">Home</a></li>
+                        <li class="list_item"><a href="#">About</a></li>
+                        <li class="list_item"><a href="#">Destinations</a></li>
+                        <li class="list_item"><a href="#">Tours</a></li>
+                        <li class="list_item"><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="user_section">
+                    <button type="button" class="sign_up_btn">Sign up</button>
+                    <button type="button" class="sign_in_btn">log in</button>
+                </div>
             </div>
         </div>
         <div class="banner">
@@ -35,9 +37,10 @@
                 <h1>Find The Best Place To Stress Release</h1>
                 <p class="banner_description">We believe in a travelling experience by providing our tour plan that suits your the best!</p>
                 <div class="learnMore_playDemo">
-                    <button type="button" class="learn_more"><a href="#">Learn More</a></button>
+                    <button type="button" class="explore_more"><a href="#">Explore More</a></button>
                     <p class="play_demo">
-                        Play Demo
+                        <button type="button" class="icon"><i class="fa-solid fa-play"></i></button>
+                        <span class="demo">Play Demo</span>
                     </p>
                 </div>
             </div>
@@ -47,19 +50,29 @@
         </div>
         <div class="form">
             <form action="#">
-                <select name="country select" id="country">
-                    <option value="" disabled selected hidden>location</option>
-                    <option value="New zealand">New zealand</option>
-                    <option value="Cameroon">Cameroon</option>
-                    <option value="Nigeria">Nigeria</option>
-                    <option value="portugal">portugal</option>
-                    <option value="Luxemburg">Luxemburg</option>
-                    <option value="Canada">Canada</option>
-                    <option value="Europe">Europe</option>
-                </select>
+                <div class="select">
+                    <div class="location">
+                        <i class="fa-solid fa-location-pin"></i>
+                    </div>
+                    <select name="country select" id="country">
+                        <option value="" disabled selected hidden>location</option>
+                        <option value="New zealand">New zealand</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="portugal">portugal</option>
+                        <option value="Luxemburg">Luxemburg</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Europe">Europe</option>
+                    </select>
+                </div>
                 <div class="date">
-                    <span>Date</span>
-                    <input type="date"/>
+                    <div class="time">
+                        <i class="fa-solid fa-hourglass-end"></i>
+                    </div>
+                    <p>
+                        <span>Date</span>
+                        <input type="date"/>
+                    </p>
                 </div>
                 <button class="explore_now" type="button">Explore Now</button>
             </form>
