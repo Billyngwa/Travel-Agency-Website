@@ -8,6 +8,7 @@ header{
         padding-bottom: 30px;
         padding-top: 15px;
         background-color: $main_blue_color;
+        z-index:999;
         .navigation{
             @include displayElementFlex(center);
             @include container(90%, 5%);
@@ -22,6 +23,7 @@ header{
                     li{
                         margin: 0px 0px 0px 30px;
                         a{
+                            text-decoration: underline;
                             color:$global;
                             @include textStyle(20px,600px);
                         }
@@ -112,6 +114,7 @@ header{
     .form{
         padding:20px 0px 40px 0px;
         @include container(60%,5%);
+        gap:5%;
         form{
             width: 500px;
             @include buttonDesign(50px, $global);
@@ -120,7 +123,7 @@ header{
             .select{
                 display:flex;
                 gap: 5px;
-                
+                width: 30%;
                 .location{
                     width:30px;
                     height:30px;
@@ -136,34 +139,45 @@ header{
                 select{
                     margin: 7px 0px 7px 0px;
                     border: none;
+                    &:focus{
+                        outline:none;
+                        border:none;
+                    }
                 }
             }
             .date{
-                width:30px;
-                height:30px;
-                background: rgba(0, 100, 210, 0.3);
-                border-radius: 50%;
-                margin: 20px 180px 20px 0px;
-                @include displayElementFlex(center);
-                i{
-                    padding: 10px 0px 0px 10px;
-                    font-size: 12px;
-                    color:$main_blue_color;
-                }
-                p{
-                    padding: 10px 0px 0px 20px;
-                    span{
-                        position: relative;
-                        @include textStyle(16px,600px);
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        &::after{
-                            @include icon;
-                        }
+                display: flex;
+                width:30%;
+                .time{
+                    width:30px;
+                    height:30px;
+                    background: rgba(0, 100, 210, 0.3);
+                    border-radius:50%;
+                    margin: 10px 0px 0px 10px;
+                    i{
+                        padding: 10px 0px 0px 5px;
+                        font-size: 12px;
+                        color:$main_blue_color;
                     }
                 }
-            
+                p{
+                    margin: 10px 0px 0px 20px;
+                    span{
+                        @include textStyle(16px,600px);
+                    }
+                    input{
+                        border:none;
+                    }
+                }
+            }
+            button{
+                @include buttonDesign(50px,$main_yellow);
+                @include textStyle(16px,600);
+                color: $main_blue_color;
+                background-color: $main_yellow;
+                margin:0px 60px 0px 0px;
+                padding: 10px;
+                width:30%;
             }
         }
     }

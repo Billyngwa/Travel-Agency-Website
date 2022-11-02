@@ -1,0 +1,43 @@
+footer{
+    width: 100%;
+    .footer_navigation{
+        @include displayElementFlex(center);
+        @include container(90%, 5%);
+        .logo{
+            h1{
+                color:black;
+                @include textStyle(25px,600px);
+            }
+        }
+        nav{
+            ul{
+                @include displayElementFlex(center);
+                li{
+                    margin: 0px 0px 0px 30px;
+                    a{
+                        color:#695656;
+                        @include textStyle(20px,600px);
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        @include container(90%, 5%); 
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .lower_footer{
+        @include displayElementFlex(center);
+        @include container(90%, 5%); 
+        margin:30px;
+        .left,.right{
+            @include textStyle(14px,400);
+            color:#817E7E;
+        }
+        .right{
+            display: flex;
+            gap:40px;
+        }
+    }
+}
