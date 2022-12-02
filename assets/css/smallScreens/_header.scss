@@ -23,7 +23,6 @@ header{
                     li{
                         margin: 0px 0px 0px 30px;
                         a{
-                            text-decoration: underline;
                             color:$global;
                             @include textStyle(20px,600px);
                         }
@@ -46,6 +45,27 @@ header{
                     color: $main_blue_color;
                 }
             }
+            .hamburger{
+                display: none;
+                cursor: pointer;
+                height: 25px;
+                width:25px;
+                .mid{
+                    width:100%;
+                    height:4px;
+                    background-color: black;
+                    border-radius: 50px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                   
+                }
+                .first,.third{
+                    width:100%;
+                    height:4px;
+                    background-color:black;
+                    border-radius: 50px;
+                }
+            }
         }
     }
     .banner{
@@ -64,6 +84,7 @@ header{
                 line-height: 32px;
                 color:#F1F1F1;
                 padding-top:20px;
+                width:400px;
             }
             .learnMore_playDemo{
                 display: flex;

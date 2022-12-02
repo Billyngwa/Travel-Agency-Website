@@ -17,6 +17,9 @@ footer{
                     a{
                         color:#695656;
                         @include textStyle(20px,600px);
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
@@ -30,7 +33,7 @@ footer{
     .lower_footer{
         @include displayElementFlex(center);
         @include container(90%, 5%); 
-        margin:30px;
+        margin-bottom:30px;
         .left,.right{
             @include textStyle(14px,400);
             color:#817E7E;
@@ -38,6 +41,15 @@ footer{
         .right{
             display: flex;
             gap:40px;
+            span{
+                a{
+                    color:#695656;
+                    // @include textStyle(20px,600px);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
     }
 }

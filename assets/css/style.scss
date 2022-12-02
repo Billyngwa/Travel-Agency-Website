@@ -1,7 +1,7 @@
 @import './settings/variables';
 @import './settings/reset';
 @import './settings/mixins';
-@media (max-width:1600px){
+@media (max-width:2100px){
     @import './largeScreens/header';
     @import './largeScreens/body';
     @import './largeScreens/footer';

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon">
     <title>Travel Agency Website</title>
 </head>
-<body>
+<body class="main_body">
     <header>
         <div class="navigation_holder">
             <div class="navigation">
@@ -29,6 +29,12 @@
                 <div class="user_section">
                     <button type="button" class="sign_up_btn">Sign up</button>
                     <button type="button" class="sign_in_btn">log in</button>
+                </div>
+                <div class="hamburger">
+                    <p class="first"></p>
+                    <p class="mid"></p>
+                    <p class="third"></p>
+
                 </div>
             </div>
         </div>
@@ -78,6 +84,19 @@
             </form>
         </div>
     </header>
+    <div class="mobile">
+        
+        <button class="nav_closer">+</button>
+        <nav class="mobile_nav">
+            <ul>
+                <li class="list_item"><a href="#">Home</a></li>
+                <li class="list_item"><a href="#">About</a></li>
+                <li class="list_item"><a href="#">Destinations</a></li>
+                <li class="list_item"><a href="#">Tours</a></li>
+                <li class="list_item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
         <section class="section_one">
             <div class="left">
@@ -188,8 +207,8 @@
         <div class="lower_footer">
             <p class="left">2022 PT. T.TRIPD All right reserved</p>
             <p class="right">
-                <span>Privacy Policy</span>
-                <span>Terms & Condition</span>
+                <span><a href="#"> Privacy Policy</a></span>
+                <span><a href="#"> Terms & Condition</a></span>
             </p>
         </div>
     </footer>

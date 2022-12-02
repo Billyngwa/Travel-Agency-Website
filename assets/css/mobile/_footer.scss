@@ -1,0 +1,47 @@
+footer{
+    width: 100%;
+    .footer_navigation{
+        display: block;
+        @include container(90%, 5%);
+        .logo{
+            h1{
+                color:black;
+                @include textStyle(25px,600px);
+            }
+        }
+        nav{
+            margin: 20px 0px 20px 0px;
+            ul{
+                display: block;
+
+                li{
+                    margin: 20px 0px 0px 0px;
+                    a{
+                        color:#695656;
+                        @include textStyle(20px,600px);
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        display: none;
+        @include container(90%, 5%); 
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .lower_footer{
+        display:block;
+        @include container(90%, 5%); 
+        margin-bottom:30px;
+        .left,.right{
+            @include textStyle(14px,400);
+            color:#817E7E;
+        }
+        .right{
+            display: flex;
+            gap:40px;
+            margin-top:30px;
+        }
+    }
+}

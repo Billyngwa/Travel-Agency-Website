@@ -1,0 +1,245 @@
+header{
+    background-color: $main_blue_color;
+    width: 100%;
+    .navigation_holder{
+        width: 100%;
+        position: fixed;
+        top:0px;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        background-color: $main_blue_color;
+        z-index:999;
+        .navigation{
+            @include displayElementFlex(center);
+            @include container(95%, 2.5%);
+            .logo{
+                color: $global;
+                @include textStyle(25px,600px);
+            }
+            nav{
+                display: none;
+            }
+            .user_section{
+                gap: 15px;
+                @include displayElementFlex(center);
+                margin-left: 40px;
+                .sign_up_btn{
+                   
+                    padding: 7px 12px 7px 12px;
+                    background-color: transparent;
+                    color: $global;
+                }
+                .sign_in_btn{
+                    border-color:$main_yellow;
+                    background-color: $main_yellow;
+                    color: $main_blue_color;
+                }
+            }
+            .hamburger{
+                display: block;
+                cursor: pointer;
+                height: 25px;
+                width:25px;
+                .mid{
+                    width:100%;
+                    height:4px;
+                    background-color: black;
+                    border-radius: 50px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                   
+                }
+                .first,.third{
+                    width:100%;
+                    height:4px;
+                    background-color:black;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+    .banner{
+        @include container(90%,5%);
+        padding-top:160px;
+        @include displayElementFlex(center);
+        .left{
+            width: 65%;
+            h1{
+                @include textStyle(64px, 600px);
+                line-height: 74px;
+                color:$global;
+            }
+            .banner_description{
+                @include textStyle(20px, 400px);
+                line-height: 32px;
+                color:#F1F1F1;
+                padding-top:20px;
+                width:400px;
+            }
+            .learnMore_playDemo{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding-top: 30px;
+                button{
+                    @include buttonDesign (25px,$global);
+                    background-color: $global;
+                    padding: 10px 12px 10px 12px;
+                    a{
+                        @include textStyle(16px,600px);
+                        color:$main_blue_color;
+                    }
+                }
+                .play_demo{
+                    gap: 10px;
+                    @include displayElementFlex(center);
+                    .icon{
+                        height: 30px;
+                        width:30px;
+                        border-radius: 50%;
+                        border: 1px solid $main_yellow;
+                        background-color: $main_yellow;
+                        i{
+                            @include textStyle(14px, 400px);
+                            font-family: "Font Awesome 5 Free";
+                            color:$main_blue_color;
+                            margin: -8px 0px 0px 0px;
+                        }
+                    }
+
+                    .demo{
+                        @include textStyle(16px,600px);
+                        color:$global;
+                    }
+                }
+            }
+        }
+        .right{
+            height: 500px;
+            width:500px;
+            background-image: url("../../../images/hero.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    .form{
+        padding:20px 0px 40px 0px;
+        @include container(60%,5%);
+        gap:5%;
+        form{
+            width: 500px;
+            @include buttonDesign(50px, $global);
+            background-color: $global;
+            @include displayElementFlex(center);
+            .select{
+                display:flex;
+                gap: 5px;
+                width: 30%;
+                .location{
+                    width:30px;
+                    height:30px;
+                    background: rgba(0, 100, 210, 0.3);
+                    border-radius: 50%;
+                    margin: 20px 0px 20px 15px;
+                    i{
+                        padding: 10px 0px 0px 10px;
+                        font-size: 12px;
+                        color:$main_blue_color;
+                    }
+                }
+                select{
+                    margin: 7px 0px 7px 0px;
+                    border: none;
+                    &:focus{
+                        outline:none;
+                        border:none;
+                    }
+                }
+            }
+            .date{
+                display: flex;
+                width:30%;
+                .time{
+                    width:30px;
+                    height:30px;
+                    background: rgba(0, 100, 210, 0.3);
+                    border-radius:50%;
+                    margin: 10px 0px 0px 10px;
+                    i{
+                        padding: 10px 0px 0px 5px;
+                        font-size: 12px;
+                        color:$main_blue_color;
+                    }
+                }
+                p{
+                    margin: 10px 0px 0px 20px;
+                    span{
+                        @include textStyle(16px,600px);
+                    }
+                    input{
+                        border:none;
+                    }
+                }
+            }
+            button{
+                @include buttonDesign(50px,$main_yellow);
+                @include textStyle(16px,600);
+                color: $main_blue_color;
+                background-color: $main_yellow;
+                margin:0px 60px 0px 0px;
+                padding: 10px;
+                width:30%;
+            }
+        }
+    }
+}
+.mobile{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.342);
+    height: 100vh;
+    position: fixed;
+    left:100%;
+    top:0px;
+    width:100%;
+    z-index:9999;
+    &.open{
+        left: 0%;
+        body{
+            overflow-y: hidden;
+        }
+    }
+    // &.close{
+    //     left:100%;
+    // }
+    nav{
+        width:50%;
+        background-color: white;
+        position: absolute;
+        right:0%;
+        height: 100%;
+        top:0px;
+        ul{
+            padding-top:10px;
+            li{
+                padding:15px;
+                a{
+                    @include textStyle(25px,600);
+                    color:black;
+                }
+            }
+        }
+    }
+    button{
+        @include buttonDesign(0px,transparent);
+        background-color: transparent;
+        font-size: 40px;
+        color:white;
+        transform: rotate(45deg);
+
+    }
+}
+.main_body{
+    &.open{
+        overflow-y: hidden;
+    }
+}

@@ -1,0 +1,137 @@
+main{
+    .section_five{
+        @include container(75%,12.5%);
+        background-color:$main_blue_color;
+        border-radius: 25px;
+        
+        margin-bottom: 50px;
+        h1{
+            @include textStyle(25px, 600);
+            color:$global;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width:40%;
+            margin-left: 30%;
+            // line-height: 60px;
+        }
+        p{
+            @include textStyle(14px, 400);
+            color:$global;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        button{
+            @include buttonDesign(50px, transparent);
+            @include textStyle(18px, 600);
+            margin-bottom: 30px;
+            margin-left: 33vw;
+            background-color: $main_yellow;
+            color: $main_blue_color;
+            padding: 10px;
+
+        }
+    }
+    .section_one{
+        @include container(75%,12.5%);
+        @include displayElementFlex(null);
+        gap: 3%;
+        margin-top: 80px;
+        .right{
+            width:50%;
+            .section_one_heading{
+                @include textStyle(40px,600);
+                line-height: 60px;
+                width:450px;
+                color:#1A1824;
+            }
+            .heading_description{
+                color:#4A515F;
+                line-height: 30px;
+                @include textStyle(16px,400);
+                width:468px;
+            }
+            .animated_number_count{
+                @include displayElementFlex(null);
+                gap:4%;
+                margin-top: 20px;
+                .number_item{
+                    width:32%;
+                    h1{
+                        color:$main_blue_color;
+                        line-height: 50px;
+                        @include textStyle(30px,600);
+                    }
+                    p{
+                        color:#4A515F;
+                        line-height: 32px;
+                        @include textStyle(18px,400);
+                    }
+                }
+            }
+        }
+        .left{
+            width:47%;
+            height: 370px;
+            position: relative;
+            .image1,.image2,.image3{
+                position: absolute;
+            }
+            .image1{
+                top:0px;
+                left:0px;
+                width:200px;
+                height:200px;
+                border-radius: 50%;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+            .image2{
+                top:40px;
+                right:14%;
+                width: 136px;
+                height: 136px;
+                border-radius: 50%;
+                img{
+                  
+                    width:100%;
+                    height:100%;
+                }
+            }
+            .image3{
+                bottom:0px;
+                left:30%;
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                img{
+                    
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+    }
+    .section_two{
+        @include container(75%,12.5%);
+        .section_two_heading{
+            color:#1A1824;
+            line-height: 30px;
+            @include textStyle(40px,600);
+            text-align: center;
+        }
+        .heading_description{
+            
+            @include container(80%,10%);
+            color:#4A515F;
+            line-height: 30px;
+            @include textStyle(16px,400);
+            text-align: center;
+        }
+        .reasons_to_choose{
+            @include displayElementFlex(center);
+
+        }
+    }
+}

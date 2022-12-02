@@ -2,7 +2,7 @@ footer{
     width: 100%;
     .footer_navigation{
         @include displayElementFlex(center);
-        @include container(90%, 5%);
+        @include container(75%, 12.5%);
         .logo{
             h1{
                 color:black;
@@ -23,14 +23,14 @@ footer{
         }
     }
     hr{
-        @include container(90%, 5%); 
+        @include container(75%, 12.5%); 
         margin-top: 40px;
         margin-bottom: 40px;
     }
     .lower_footer{
         @include displayElementFlex(center);
-        @include container(90%, 5%); 
-        margin:30px;
+        @include container(75%, 12.5%); 
+        margin-bottom: 30px;
         .left,.right{
             @include textStyle(14px,400);
             color:#817E7E;

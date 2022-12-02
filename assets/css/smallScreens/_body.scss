@@ -10,22 +10,23 @@ main{
             color:$global;
             padding-top: 30px;
             padding-bottom: 30px;
-            text-align: center;
+            width:430px;
+            margin-left: 30%;
         }
         p{
-            @include textStyle(25px, 600);
+            @include textStyle(10px, 400);
             color:$global;
             padding-bottom: 30px;
             text-align: center;
         }
         button{
             @include buttonDesign(50px, transparent);
-            @include textStyle(18px, 600);
+            @include textStyle(12px, 600);
             margin-bottom: 30px;
             margin-left: 40vw;
             background-color: $main_yellow;
             color: $main_blue_color;
-            padding: 10px;
+            padding: 15px;
         }
     }
     .section_one{
